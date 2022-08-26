@@ -83,3 +83,16 @@ farenheitLink.addEventListener("click", displayFarenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
+
+function retrievePosition(position) {
+  let apiKey = "a69f039661334fe4a190d3d176fb9347";
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
+  let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
+  axios.get(url).then(displayTemperature);
+}
+function getPosition() {
+  navigator.geolocation.getCurrentPosition(retrievePosition);
+}
+let currentLocationButton = document.querySelector("#currentLocation");
+currentLocationButton.addEventListener("click", getPosition);

@@ -1,6 +1,31 @@
 body {
   font-family: arial, sans-serif;
 }
+.form-control {
+  background-color: rgb(217, 237, 254);
+  border-color: rgb(55, 154, 251);
+}
+.form-control:hover {
+  background: rgb(254, 235, 131, 0.4);
+  color: rgb(1, 111, 197);
+}
+#city-input-button {
+  border-color: rgb(1, 111, 197);
+  background-color: rgb(55, 154, 251);
+}
+#city-input-button:hover {
+  background: rgb(254, 235, 131, 0.4);
+  color: rgb(1, 111, 197);
+}
+#currentLocation {
+  background: rgb(254, 235, 131);
+  color: rgb(1, 111, 197);
+  border-color: rgb(248, 211, 0);
+}
+#currentLocation:hover {
+  background: rgb(217, 237, 254);
+  color: rgb(1, 111, 197);
+}
 
 h1 {
   color: #878787;
