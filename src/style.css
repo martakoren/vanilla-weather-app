@@ -1,6 +1,28 @@
 body {
   font-family: arial, sans-serif;
 }
+.hero {
+  width: 100%;
+  height: 3vh;
+}
+back-video {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+@media (min-aspect-ratio: 16/9) {
+  .back-video {
+    width: auto;
+    height: 100%;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+    width: 100%;
+    height: auto;
+  }
+}
 .form-control {
   background-color: rgb(217, 237, 254);
   border-color: rgb(55, 154, 251);
@@ -30,7 +52,7 @@ body {
 }
 
 h1 {
-  color: #878787;
+  color: rgb(33, 33, 33);
   font-size: 24px;
   font-weight: 100;
   line-height: 28px;
@@ -47,7 +69,7 @@ li {
   margin: 0;
   padding: 0;
   text-transform: capitalize;
-  color: rgb(135, 135, 135);
+  color: rgb(86, 79, 79);
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
@@ -60,12 +82,14 @@ li:first-letter {
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
+  position: absolute;
 }
 
 .weather-app {
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
+  background: rgba(246, 241, 241, 0.8);
 }
 
 .overview {
@@ -95,4 +119,10 @@ li:first-letter {
   color: rgb(33, 33, 33);
   cursor: default;
   text-decoration: none;
+}
+.coded {
+  background: rgba(246, 241, 241, 0.3);
+  border-radius: 20px;
+  color: black;
+  font-family: monospace;
 }
