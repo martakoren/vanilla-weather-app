@@ -3,7 +3,7 @@ body {
 }
 .hero {
   width: 100%;
-  height: 3vh;
+  height: 0vh;
 }
 back-video {
   position: absolute;
